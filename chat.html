@@ -10,7 +10,7 @@
     <title>Chat | Kakao Clone</title>
 </head>
 
-<body>
+<body class="chats-body">
     <div class="status-bar">
         <div class="status-bar__column">
             <span class="status-bar__clock">
@@ -43,48 +43,36 @@
             </span>
         </div>
     </header>
-    <main class="chat">
+    <main class="chat-screen">
         <ul class="chat__messages">
             <span class="chat__timestamp">Friday, January 11, 2019</span>
         
             <li class="incoming-message message">
                 <img src="images/man1.png" class="g-avatar message__avatar">
                 <div class="message__content">
-                    <span class="message__author">
-                        Best Friend
-                    </span>
                     <div class="message__bubble">
                         Congrats I love you!
                     </div>
+                    <span class="message__author">
+                        Best Friend
+                    </span>
                 </div>
-                <span class="message__timestamp"></span>
             </li>
 
-            <li class="incoming-message message">
+            <li class="sent-message message">
                 <div class="message__content">
-                    <span class="message__timestamp"></span>
                     <div class="message__bubble">
-                        Congrats I love you!
+                        Thanks you see you soon!
                     </div>
                 </div>
-            </li>
-            <li class="incoming-message message">
-                <img src="images/man1.png" class="g-avatar message__avatar">
-                <div class="message__content">
-                    <span class="message__author">
-                        Best Friend
-                    </span>
-                    <div class="message__bubble">
-                        Thanks you!
-                    </div>
-                </div>
-                <span class="message__timestamp"></span>
             </li>
         </ul>
     </main>
     <div class="chat__write">
         <div class="chat__write-column">
-            <i class="far fa-plus-square"></i>
+            <span class="chat__write-icon">
+                <i class="far fa-plus-square"></i>
+            </span>
         </div>
         <div class="chat__write-column">
             <input type="text" placeholder="Send message" class="chat__write-input"> 
