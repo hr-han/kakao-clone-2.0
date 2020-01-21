@@ -33,6 +33,16 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    animation: turnBadge 1s linear infinite;
+}
+
+@keyframes turnBadge {
+    from{
+        transform: rotateY(1turn);
+    }
+    to{
+        transform: none;
+    }
 }
 
 @keyframes showNavBar {
